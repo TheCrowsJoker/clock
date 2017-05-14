@@ -1,0 +1,137 @@
+.container {
+    width: 300px;
+    height: 300px;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 15px solid #000;
+}
+
+.hours {
+    height: 200px;
+    width: 20px;
+    position: relative;
+    left: 140px;
+    top: 50px;
+    z-index: 8;
+    -webkit-animation: rotation 21600s infinite linear;
+}
+
+.hours .cover {
+    height: 100px;
+    width: 20px;
+    position: relative;
+    top: 0px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.minutes {
+    height: 250px;
+    width: 20px;
+    position: relative;
+    left: 140px;
+    top: -175px;
+    z-index: 8;
+    -webkit-animation: rotation 3600s infinite linear;
+}
+
+.minutes .cover {
+    height: 125px;
+    width: 20px;
+    position: relative;
+    background-color: #000;
+    z-index: 10;
+}
+
+.seconds {
+    height: 250px;
+    width: 10px;
+    position: relative;
+    top: -425px;
+    left: 147px;
+    z-index: 12;
+    -webkit-animation: rotation 60s infinite linear;
+}
+
+.seconds .cover {
+    height: 125px;
+    width: 6px;
+    position: relative;
+    background-color: #f00;
+    z-index: 14;
+}
+
+.mark {
+    width: 20px;
+    height: 300px;
+    position: absolute;
+    left: 163px;
+    top: 23px;
+}
+
+.mark .cover{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    background-color: #000;
+    z-index: 5;
+}
+
+.one {
+    transform: rotate(0deg);
+}
+
+.two {
+    transform: rotate(30deg);
+}
+
+.three {
+    transform: rotate(60deg);
+}
+
+.four {
+    transform: rotate(90deg);
+}
+
+.five {
+    transform: rotate(120deg);
+}
+
+.six {
+    transform: rotate(150deg);
+}
+
+.seven {
+    transform: rotate(180deg);
+}
+
+.eight {
+    transform: rotate(210deg);
+}
+
+.nine {
+    transform: rotate(240deg);
+}
+
+.ten {
+    transform: rotate(270deg);
+}
+
+.eleven {
+    transform: rotate(300deg);
+}
+
+.twelve {
+    transform: rotate(330deg);
+}
+
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
